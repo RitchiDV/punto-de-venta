@@ -22,9 +22,11 @@ def add_comma():
     clients += ",\n"
 
     
-def run ():
+def run():
+    print("lista antigua: ")
     list_clients()
     create_client(input("nombre del cliente nuevo:  "))
+    print("**lista actualizada**")
     list_clients()
 
 
