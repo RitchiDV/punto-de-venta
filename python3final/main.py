@@ -2,20 +2,20 @@ def inicio():
     clientes = "pablo , ricardo ,"
     clientes += "david"
     print(clientes)
-
-
-
-
-
-
-
-
-
-
-
-
-
     
+
+
+
+
+
+
+
+
+
+
+
+
+
 def run ():
     inicio()
 
