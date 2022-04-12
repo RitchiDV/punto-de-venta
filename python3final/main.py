@@ -1,7 +1,3 @@
-from http import client
-from re import U
-
-
 clients = "pablo,\nricardo,\n"
 
 def _print_welcome():
@@ -45,7 +41,12 @@ def update_client(client_name,new_update):
     else:
         print("client is not in clients list")
 
-
+def delete_client(client_name):
+    global clients
+    if client_name in clients:
+        clients = clients.replace(client_name +",","")
+    else:
+        print("client is not in clients list")
 
 def pidiendo_datos():
 
@@ -59,7 +60,8 @@ def pidiendo_datos():
 
 #-------------------------------------------------------------------
     elif opcion == "D":
-        pass
+        client_name =input("whats is client delete?:  ")
+        delete_client(client_name)
 
 #---------------------------------------------------------------------
     elif opcion == "U":#actualiza y borra nombre anterior.
