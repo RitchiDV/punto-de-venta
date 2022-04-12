@@ -43,8 +43,8 @@ def update_client(client_name,new_update):
 
 def delete_client(client_name):
     global clients
-    if client_name in clients:
-        clients = clients.replace(client_name +",","")
+    if client_name in clients:# si client name esta en client entonces
+        clients = clients.replace(client_name +",","")#clients remplasa (clients_name por, "" un string vasio)
     else:
         print("client is not in clients list")
 
@@ -60,8 +60,8 @@ def pidiendo_datos():
 
 #-------------------------------------------------------------------
     elif opcion == "D":
-        client_name =input("whats is client delete?:  ")
-        delete_client(client_name)
+        client_name =input("whats is client delete?:  ")#parametro de delete_client 
+        delete_client(client_name)#funcion con el parametro 
 
 #---------------------------------------------------------------------
     elif opcion == "U":#actualiza y borra nombre anterior.
